@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tambahkan pattern kamu di sini */
+@layer utilities {
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    .bg-herringbone {
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(5) rotate(60)'><rect x='0' y='0' width='100%' height='100%' fill='%23008de1ff'/><path d='M0 0h10v20H0zM30 0v10H10V0zM10 10h10v20H10zM40 10v10H20V10zM20 20h10v20H20zM50 20v10H30V20zM30 30h10v20H30zM20 30v10H0V30zM10 20v10h-20V20zM30-10h10v20H30z'  stroke-width='2' stroke='%23def2ffff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-145,-115)' fill='url(%23a)'/></svg>");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bg-herringbone::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, transparent 30%, #00436a);
+        pointer-events: none;
+    }
+}
