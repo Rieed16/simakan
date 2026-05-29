@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // Tentukan path ke semua file HTML atau JS kamu agar Tailwind bisa mendeteksi kelas yang digunakan
-  content: ["./*.html", "./src/**/*.{html,js}"],
+  content: ["./*.html", "./src/**/*.{html,js}", "./*.php"],
   theme: {
     extend: {
       colors: {
